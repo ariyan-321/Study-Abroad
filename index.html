@@ -26,58 +26,43 @@
         fbq('track', 'PageView');
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
 <body class="bg-gray-100">
     <!-- Hero Section -->
-    <section class="bg-blue-600 text-white text-center py-20">
-        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
-        <p class="mt-4 text-lg">Apply now and secure your future in top medical universities.</p>
-        <a href="#apply" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold">Apply Now</a>
+    <section class="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white text-center py-20">
+        <h1 class="text-5xl font-extrabold opacity-0" id="hero-title">Study MBBS Abroad</h1>
+        <p class="mt-4 text-xl opacity-0" id="hero-subtitle">Apply now and secure your future in top medical universities.</p>
+        <a href="#apply" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300">Apply Now</a>
     </section>
 
     <!-- Why Study MBBS Abroad -->
-    <section class="max-w-5xl mx-auto py-10 px-5">
-        <h2 class="text-3xl font-semibold text-center">Why Study MBBS Abroad?</h2>
-        <ul class="mt-6 space-y-3 list-disc list-inside text-gray-700">
-            <li>Affordable tuition fees</li>
-            <li>Globally recognized degrees</li>
-            <li>High-quality education & facilities</li>
-            <li>English-taught programs available</li>
-        </ul>
-    </section>
-
-    <!-- Top Countries -->
-    <section class="bg-gray-200 py-10">
-        <div class="max-w-5xl mx-auto text-center">
-            <h2 class="text-3xl font-semibold">Top Countries</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
-                <div class="bg-white p-5 shadow-md rounded">Russia</div>
-                <div class="bg-white p-5 shadow-md rounded">Uzbekistan</div>
-                <div class="bg-white p-5 shadow-md rounded">Kazakhstan</div>
-                <div class="bg-white p-5 shadow-md rounded">Philippines</div>
-                <div class="bg-white p-5 shadow-md rounded">Georgia</div>
-                <div class="bg-white p-5 shadow-md rounded">Kyrgyzstan</div>
-                <div class="bg-white p-5 shadow-md rounded">Egypt</div>
-            </div>
+    <section class="max-w-5xl mx-auto py-16 px-5 text-center">
+        <h2 class="text-4xl font-bold text-gray-800">Why Study MBBS Abroad?</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Affordable tuition fees</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Globally recognized degrees</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">High-quality education & facilities</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">English-taught programs available</div>
         </div>
     </section>
 
     <!-- Admission Process & Eligibility -->
-    <section class="max-w-5xl mx-auto py-10 px-5">
-        <h2 class="text-3xl font-semibold text-center">Admission Process & Eligibility</h2>
-        <ol class="mt-6 space-y-3 list-decimal list-inside text-gray-700">
-            <li>Check eligibility requirements</li>
-            <li>Submit application & required documents</li>
-            <li>Receive admission confirmation</li>
-            <li>Apply for a student visa</li>
-            <li>Prepare for travel & studies</li>
-        </ol>
+    <section class="max-w-5xl mx-auto py-16 px-5 text-center">
+        <h2 class="text-4xl font-bold text-gray-800">Admission Process & Eligibility</h2>
+        <div class="mt-6 space-y-4">
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Check eligibility requirements</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Submit application & required documents</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Receive admission confirmation</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Apply for a student visa</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Prepare for travel & studies</div>
+        </div>
     </section>
 
     <!-- Call to Action (Lead Form) -->
-    <section id="apply" class="bg-blue-600 py-10 text-white">
+    <section id="apply" class="bg-blue-600 py-16 text-white">
         <div class="max-w-md mx-auto text-center">
-            <h2 class="text-2xl font-semibold">Apply Now</h2>
+            <h2 class="text-3xl font-bold">Apply Now</h2>
             <form action="php/form-handler.php" method="POST" class="mt-6 space-y-4" id="leadForm">
                 <input type="text" name="name" placeholder="Full Name" class="w-full p-3 rounded text-gray-900" required>
                 <input type="email" name="email" placeholder="Email Address" class="w-full p-3 rounded text-gray-900" required>
@@ -92,7 +77,7 @@
                     <option>Kyrgyzstan</option>
                     <option>Egypt</option>
                 </select>
-                <button type="submit" class="w-full bg-yellow-400 text-blue-900 p-3 rounded font-semibold">Submit</button>
+                <button type="submit" class="w-full bg-yellow-400 text-blue-900 p-3 rounded font-semibold shadow-lg hover:scale-105 transition-transform duration-300">Submit</button>
             </form>
         </div>
     </section>
@@ -107,6 +92,9 @@
                 event.preventDefault();
             }
         });
+        
+        gsap.to("#hero-title", {opacity: 1, y: -20, duration: 1, ease: "power2.out"});
+        gsap.to("#hero-subtitle", {opacity: 1, y: -10, delay: 0.5, duration: 1, ease: "power2.out"});
     </script>
 </body>
 </html>
