@@ -1,76 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Study Abroad</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn-icons-png.flaticon.com/512/3145/3145765.png"
-    />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study MBBS Abroad</title>
+    <meta name="description" content="Apply now for MBBS abroad in top countries like Russia, Uzbekistan, Kazakhstan, and more.">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXX-Y');
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
-  </head>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white text-center py-20">
+        <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
+        <p class="mt-4 text-lg">Apply now and secure your future in top medical universities.</p>
+        <a href="#apply" class="mt-6 inline-block bg-yellow-400 text-blue-900 px-6 py-3 rounded-lg font-semibold">Apply Now</a>
+    </section>
 
-  <header>
-    <div class="navbar bg-base-100">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
-            <li><a>Item 1</a></li>
-            <li>
-              <a>Parent</a>
-              <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
-              </ul>
-            </li>
-            <li><a>Item 3</a></li>
-          </ul>
-        </div>
-        <a class="btn btn-ghost text-xl">Study MBBS Abroad</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Contact Us</a></li>
+    <!-- Why Study MBBS Abroad -->
+    <section class="max-w-5xl mx-auto py-10 px-5">
+        <h2 class="text-3xl font-semibold text-center">Why Study MBBS Abroad?</h2>
+        <ul class="mt-6 space-y-3 list-disc list-inside text-gray-700">
+            <li>Affordable tuition fees</li>
+            <li>Globally recognized degrees</li>
+            <li>High-quality education & facilities</li>
+            <li>English-taught programs available</li>
         </ul>
-      </div>
-      <div class="navbar-end">
-        <a class="btn">Get Started</a>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <main></main>
+    <!-- Top Countries -->
+    <section class="bg-gray-200 py-10">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold">Top Countries</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-white p-5 shadow-md rounded">Russia</div>
+                <div class="bg-white p-5 shadow-md rounded">Uzbekistan</div>
+                <div class="bg-white p-5 shadow-md rounded">Kazakhstan</div>
+                <div class="bg-white p-5 shadow-md rounded">Philippines</div>
+                <div class="bg-white p-5 shadow-md rounded">Georgia</div>
+                <div class="bg-white p-5 shadow-md rounded">Kyrgyzstan</div>
+                <div class="bg-white p-5 shadow-md rounded">Egypt</div>
+            </div>
+        </div>
+    </section>
 
-  <footer></footer>
+    <!-- Admission Process & Eligibility -->
+    <section class="max-w-5xl mx-auto py-10 px-5">
+        <h2 class="text-3xl font-semibold text-center">Admission Process & Eligibility</h2>
+        <ol class="mt-6 space-y-3 list-decimal list-inside text-gray-700">
+            <li>Check eligibility requirements</li>
+            <li>Submit application & required documents</li>
+            <li>Receive admission confirmation</li>
+            <li>Apply for a student visa</li>
+            <li>Prepare for travel & studies</li>
+        </ol>
+    </section>
 
-  <body></body>
+    <!-- Call to Action (Lead Form) -->
+    <section id="apply" class="bg-blue-600 py-10 text-white">
+        <div class="max-w-md mx-auto text-center">
+            <h2 class="text-2xl font-semibold">Apply Now</h2>
+            <form action="php/form-handler.php" method="POST" class="mt-6 space-y-4" id="leadForm">
+                <input type="text" name="name" placeholder="Full Name" class="w-full p-3 rounded text-gray-900" required>
+                <input type="email" name="email" placeholder="Email Address" class="w-full p-3 rounded text-gray-900" required>
+                <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 rounded text-gray-900" required>
+                <select name="country" class="w-full p-3 rounded text-gray-900" required>
+                    <option value="">Preferred Country</option>
+                    <option>Russia</option>
+                    <option>Uzbekistan</option>
+                    <option>Kazakhstan</option>
+                    <option>Philippines</option>
+                    <option>Georgia</option>
+                    <option>Kyrgyzstan</option>
+                    <option>Egypt</option>
+                </select>
+                <button type="submit" class="w-full bg-yellow-400 text-blue-900 p-3 rounded font-semibold">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("leadForm").addEventListener("submit", function(event) {
+            let name = document.querySelector("[name='name']").value;
+            let email = document.querySelector("[name='email']").value;
+            let phone = document.querySelector("[name='phone']").value;
+            if (!name || !email || !phone) {
+                alert("Please fill all fields correctly.");
+                event.preventDefault();
+            }
+        });
+    </script>
+</body>
 </html>
