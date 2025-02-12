@@ -7,24 +7,12 @@
     <meta name="description" content="Apply now for MBBS abroad in top countries like Russia, Uzbekistan, Kazakhstan, and more.">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3145/3145765.png">
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-XXXXX-Y');
-    </script>
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;
-        n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', 'YOUR_PIXEL_ID');
-        fbq('track', 'PageView');
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -38,31 +26,31 @@
     </section>
 
     <!-- Why Study MBBS Abroad -->
-    <section class="max-w-5xl mx-auto py-16 px-5 text-center">
+    <section class="max-w-5xl mx-auto py-16 px-5 text-center opacity-0" id="why-study">
         <h2 class="text-4xl font-bold text-gray-800">Why Study MBBS Abroad?</h2>
         <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Affordable tuition fees</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Globally recognized degrees</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">High-quality education & facilities</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">English-taught programs available</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Affordable tuition fees</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Globally recognized degrees</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">High-quality education & facilities</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">English-taught programs available</div>
         </div>
     </section>
 
     <!-- Admission Process & Eligibility -->
-    <section class="max-w-5xl mx-auto py-16 px-5 text-center">
+    <section class="max-w-5xl mx-auto py-16 px-5 text-center opacity-0" id="admission-process">
         <h2 class="text-4xl font-bold text-gray-800">Admission Process & Eligibility</h2>
         <div class="mt-6 space-y-4">
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Check eligibility requirements</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Submit application & required documents</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Receive admission confirmation</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Apply for a student visa</div>
-            <div class="bg-white p-6 shadow-lg rounded-lg transform hover:scale-105 transition-transform duration-300">Prepare for travel & studies</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Check eligibility requirements</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Submit application & required documents</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Receive admission confirmation</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Apply for a student visa</div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">Prepare for travel & studies</div>
         </div>
     </section>
 
     <!-- Call to Action (Lead Form) -->
-    <section id="apply" class="bg-blue-600 py-16 text-white">
-        <div class="max-w-md mx-auto text-center">
+    <section id="apply" class="bg-blue-600 py-16 text-white opacity-0">
+        <div class="w-[80%] md:max-w-md  mx-auto text-center">
             <h2 class="text-3xl font-bold">Apply Now</h2>
             <form action="php/form-handler.php" method="POST" class="mt-6 space-y-4" id="leadForm">
                 <input type="text" name="name" placeholder="Full Name" class="w-full p-3 rounded text-gray-900" required>
@@ -84,18 +72,11 @@
     </section>
 
     <script>
-        document.getElementById("leadForm").addEventListener("submit", function(event) {
-            let name = document.querySelector("[name='name']").value;
-            let email = document.querySelector("[name='email']").value;
-            let phone = document.querySelector("[name='phone']").value;
-            if (!name || !email || !phone) {
-                alert("Please fill all fields correctly.");
-                event.preventDefault();
-            }
-        });
-        
         gsap.to("#hero-title", {opacity: 1, y: -20, duration: 1, ease: "power2.out"});
         gsap.to("#hero-subtitle", {opacity: 1, y: -10, delay: 0.5, duration: 1, ease: "power2.out"});
+        gsap.to("#why-study", {opacity: 1, y: 0, duration: 1, delay: 1, ease: "power2.out"});
+        gsap.to("#admission-process", {opacity: 1, y: 0, duration: 1, delay: 1.5, ease: "power2.out"});
+        gsap.to("#apply", {opacity: 1, y: 0, duration: 1, delay: 2, ease: "power2.out"});
     </script>
 </body>
 </html>
